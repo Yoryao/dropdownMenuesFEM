@@ -1,0 +1,12 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+}
+
+.mainHeader {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
