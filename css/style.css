@@ -61,4 +61,42 @@
   font-size: 8px;
 }
 
+.sideMenuContainer {
+  display: flex;
+  width: 65%;
+  position: absolute;
+  top: 0px;
+  right: -100%;
+}
+.sideMenuContainer .sideMenu {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.sideMenuContainer .sideMenu img {
+  display: inlki;
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.sideMenuContainer .sideMenu ul li {
+  margin-left: 0;
+  width: 100%;
+  border: 1px solid yellow;
+  list-style: none;
+  height: 50px;
+  margin: 15px 10px 15px 10px;
+}
+
+.modalMode {
+  opacity: 0.5;
+}
+
+.hideMenu {
+  right: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

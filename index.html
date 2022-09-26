@@ -32,10 +32,11 @@
     </style>
   </head>
   <body>
+    <main class="modalMode">   
     <header class="mainHeader">
         <img src="./images/logo.svg" alt="logo image" class="logo" />
       <navbar class="menu">
-        <img src="./images/icon-menu.svg" alt="menu icon">
+        <img src="./images/icon-menu.svg" alt="menu icon" onclick="showMenu('sideMenuContainer')">
         <!-- <ul>
           <li>Features</li>
           <li>Company</li>
@@ -46,6 +47,10 @@
         </ul> -->
       </navbar>
     </header>
+    
+    
+    
+    
     <img
       src="./images/image-hero-mobile.png"
       alt="hero image"
@@ -63,12 +68,79 @@
       <img class="clientLogo" src="./images/client-meet.svg" alt="meet logo" />
       <img class="clientLogo" src="./images/client-maker.svg" alt="maker logo" />
     </footer>
+  </main>
 
-    <footer class="attribution">
+
+
+
+
+<div class="sideMenuContainer hideMenu" id="sideMenuContainer">
+  <div class="sideMenu">
+    <img src="./images/icon-close-menu.svg" alt="menu icon" onclick="hideMenu('sideMenuContainer')">
+        <ul>
+          <li>Features<img onclick="hideMenu('featuresMenuId')" src="./images/icon-arrow-down.svg" alt="arrow down"></li>
+            <ul class="featuresMenu" id="featuresMenuId">
+              <li><img src="./images/icon-todo.svg" alt="notes icon" >Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</li>
+              <li><img src="./images/icon-reminders.svg" alt="bell icon">Reminders</li>
+              <li><img src="./images/icon-planning.svg" alt="clock icon">Planning</li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+          <li>Company<img src="./images/icon-arrow-down.svg" alt="arrow down"></li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul> 
+
+      <button class="btn" onclick="hideMenu()" >Login</button>
+      <button class="btn">Register</button>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
+    </footer> -->
   </body>
 </html>
