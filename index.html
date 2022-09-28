@@ -77,9 +77,15 @@
 <div class="sideMenuContainer hideMenu" id="sideMenuContainer">
   <div class="sideMenu">
     <img src="./images/icon-close-menu.svg" alt="menu icon" onclick="hideMenu('sideMenuContainer')">
-        <ul>
-          <li>Features<img onclick="hideMenu('featuresMenuId')" src="./images/icon-arrow-down.svg" alt="arrow down"></li>
-            <ul class="featuresMenu" id="featuresMenuId">
+        
+    
+    
+    
+            <ul>
+          <li>Features<img onclick="dropdownMenu('featuresMenu')" src="./images/icon-arrow-down.svg" alt="arrow down"></li>
+
+
+            <ul class="featuresMenu dropdowns hideDropdown" id="featuresMenu">
               <li><img src="./images/icon-todo.svg" alt="notes icon" >Todo List</li>
               <li><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</li>
               <li><img src="./images/icon-reminders.svg" alt="bell icon">Reminders</li>
@@ -95,7 +101,17 @@
 
 
 
-          <li>Company<img src="./images/icon-arrow-down.svg" alt="arrow down"></li>
+          <li>Company<img src="./images/icon-arrow-down.svg" alt="arrow down" onclick="dropdownMenu('companyMenu')"></li>
+            <ul class="companyMenu dropdowns hideDropdown" id="companyMenu">
+              <li><a href="#">History</li>
+              <li><a href="#">Our Team</li>
+              <li><a href="#">Blog</li>
+            </ul>
+
+
+
+
+
           <li>Careers</li>
           <li>About</li>
         </ul> 

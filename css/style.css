@@ -67,6 +67,7 @@
   position: absolute;
   top: 0px;
   right: -100%;
+  transition: right 1s;
 }
 .sideMenuContainer .sideMenu {
   width: 100%;
@@ -90,6 +91,9 @@
   height: 50px;
   margin: 15px 10px 15px 10px;
 }
+.sideMenuContainer .sideMenu ul .hideDropdown {
+  display: none;
+}
 
 .modalMode {
   opacity: 0.5;
@@ -97,6 +101,7 @@
 
 .hideMenu {
   right: 0;
+  transition: right 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

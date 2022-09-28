@@ -70,7 +70,7 @@
   position: absolute;
   top: 0px;
   right: -100%;
-  //right: 0;
+  transition: right 1s;
  
     .sideMenu {
       width: 100%;
@@ -95,8 +95,11 @@
               list-style: none;
               height: 50px;
               margin: 15px 10px 15px 10px;
+            }
 
-
+            .hideDropdown {
+          
+              display: none;
             }
 
 
@@ -118,5 +121,6 @@
 
 .hideMenu {
         right: 0;
+        transition: right 1s;
 }
 

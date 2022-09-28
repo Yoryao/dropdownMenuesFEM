@@ -16,7 +16,19 @@ function showMenu(id) {
 function hideMenu(id) {
     let menu = document.getElementById(id);
     menu.classList.remove("hideMenu");
+
+    let dropdowns = document.getElementsByClassName("dropdowns");
+    
+    for (const item of dropdowns) {
+        item.classList.add("hideDropdown")
+
+    }
+    
+    
 }
 
-
+function dropdownMenu(id) {
+    let menu = document.getElementById(id);
+    menu.classList.toggle("hideDropdown")
+}
 
